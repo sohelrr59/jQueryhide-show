@@ -1,0 +1,24 @@
+<!Doctype html>
+<html>
+	<head>
+		<title>jquery hide text</title>
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	</head>
+	<body>
+		<script>
+			$(document).ready(function(){
+				
+				console.log("jquery is ready");
+				$("#hidebtn").click(function(){
+					$("#text").hide();
+				});
+				$("#showbtn").click(function(){
+					$("#text").show();
+				});
+			});
+		</script>
+		<button id="hidebtn">Hide text</button>
+		<button id="showbtn">Show text</button>
+		<p id="text">This is the text</p>
+	</body>
+</html>
